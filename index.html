@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <form name="form1">
+        <h2>Simple Calculator</h2>
+
+        <label for="txtNum1">Enter Operand 1:</label>
+        <input type="text" name="txtNum1" id="txtNum1"><br><br>
+
+        <label for="txtNum2">Enter Operand 2:</label>
+        <input type="text" name="txtNum2" id="txtNum2"><br><br>
+
+        <input type="button" value="ADD" onclick="add()"><br><br>
+
+        <label for="txtSum">Sum:</label>
+        <input type="text" name="txtSum" id="txtSum" readonly class="result">
+    </form>
+
+</body>
+</html>
