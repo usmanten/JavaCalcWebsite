@@ -1,11 +1,26 @@
+/* Animated background similar to what I did for project 1 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 form {
@@ -27,11 +42,12 @@ input[type="text"] {
 input[type="button"] {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin: 5px;
     transition: background-color 0.3s ease;
 }
 
