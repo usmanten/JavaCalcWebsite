@@ -21,3 +21,32 @@ function subtract() {
 
     document.form1.txtSum.value = num1 - num2;
 }
+
+function multiply() {
+    const num1 = Number(document.form1.txtNum1.value);
+    const num2 = Number(document.form1.txtNum2.value);
+
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Please enter valid numbers in both fields.");
+        return;
+    }
+
+    document.form1.txtSum.value = num1 * num2;
+}
+
+function divide() {
+    const num1 = Number(document.form1.txtNum1.value);
+    const num2 = Number(document.form1.txtNum2.value);
+
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Please enter valid numbers in both fields.");
+        return;
+    }
+
+    if (num2 === 0) {
+        alert("Division by zero is not allowed.");
+        return;
+    }
+
+    document.form1.txtSum.value = num1 / num2;
+}
