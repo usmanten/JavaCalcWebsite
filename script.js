@@ -44,7 +44,7 @@ function divide() {
     }
 
     if (num2 === 0) {
-        alert("Division by zero is not allowed.");
+        alert("You cannot divide by 0. Try another number.");
         return;
     }
 
